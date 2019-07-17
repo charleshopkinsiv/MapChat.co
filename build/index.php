@@ -61,7 +61,7 @@
     </div>
   </div>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnkXfIl1sDabZcnzEdYgy9X-fAXIYcnY4&callback=initMap"
+  <script src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap"
   async defer></script>
 
   <script src="app-min.js"></script>
