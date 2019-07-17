@@ -2,6 +2,8 @@
 ## 100% Build From Scratch by Charles Hopkins
 An awesome chat application where you place chat rooms on a map!
 
+![GitHub Logo](http://mapchat.co/images/mapchat.png)
+
 ## Chat With Your Neighbors!
 This app was built to bring local communities together for discussion. You can place a chat room anywhere on a map so that people in your area can find you and spark up a conversation.
 
