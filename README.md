@@ -1,5 +1,5 @@
 # [MapChat.co](http://mapchat.co)
-## 100% Build From Scratch by Charles Hopkins
+## 100% Built From Scratch by Charles Hopkins
 An awesome chat application where you place chat rooms on a map!
 
 ![GitHub Logo](http://mapchat.co/images/mapchat.png)
