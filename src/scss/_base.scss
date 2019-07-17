@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $main-font;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
+#logo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  z-index: 98;
+  padding: 1.6rem;
+  border-top-right-radius: 3.2rem;
+  box-shadow: inset -.4rem .4rem .4rem $color-grey2;
+}
+
+#backdrop {
+  display: none;
+  z-index: 97;
+  position:fixed;
+  height:100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-green-transparent,
+    $color-blue-transparent);
+  cursor: pointer;
+}
+
+#beta {
+  color: $color-grey2;
+  font-size: 1.6rem;
+}

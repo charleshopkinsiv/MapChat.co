@@ -1,0 +1,74 @@
+#chat-room {
+  display: none;
+  z-index: 98;
+  position: absolute;
+  max-width: 76.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height:100%;
+  bottom:0;
+  background: $color-grey;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  box-shadow: 0 0 20px $color-grey2;
+
+  header {
+    position: fixed;
+    z-index: 99;
+    max-width: 76.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+  }
+
+  input, button {
+    @include input-size;
+  }
+  input {
+    flex-grow:1;
+    border: solid $color-grey2 .1rem;
+  }
+  button {
+    @include button;
+  }
+}
+
+#chat {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#chat-room h1 {
+  text-align:center;
+}
+
+#chat-messages {
+  padding-bottom: 3.8rem;
+}
+
+.chat-message {
+  display: flex;
+  margin: 1.6rem auto;
+}
+.message-author {
+  width: 25%;
+  text-align: right;
+  padding-right: 3.2rem;
+}
+.message-text {
+  width: 75%;
+}
+
+#chat-input {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  display: flex;
+}

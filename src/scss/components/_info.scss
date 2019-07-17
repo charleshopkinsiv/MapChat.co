@@ -1,0 +1,76 @@
+#info {
+  display: none;
+  z-index: 99;
+  position:fixed;
+  width:70%;
+  left:15%;
+  top:15%;
+  background: $color-grey;
+  padding: 3.2rem;
+  border: solid $color-green .2rem;
+  border-radius: 3.2rem;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  button {
+    @include input-size;
+    @include button;
+    display: block;
+  }
+
+  input {
+    @include input-size;
+    display: block;
+    border: solid $color-grey2 .1rem;
+  }
+  p {
+    margin: 1.6rem auto;
+  }
+}
+
+@media (max-width: 76.8rem) {
+  #info {
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+  }
+}
+
+#info h1 {
+  text-align: center;
+}
+#info h1 span {
+  font-size: 50%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-box {
+  width: 50%;
+  float: left;
+}
+
+@media (max-width: 76.8rem) {
+  .form-box {
+    width: 100%;
+  }
+}
+
+#info-exit {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  cursor: pointer;
+}
+
+#info-button {
+  position: fixed;
+  z-index: 98;
+  top: 1.6rem;
+  left: 1.6rem;
+  cursor: pointer;
+}

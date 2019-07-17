@@ -1,0 +1,1 @@
+const urlRoot = "http://localhost/dev/map-chat/build";

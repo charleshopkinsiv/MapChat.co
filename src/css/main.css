@@ -1,0 +1,213 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+h1, h2, h3, h4 {
+  font-family: "Nanum Gothic", sans-serif; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  box-sizing: border-box; }
+
+#logo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  z-index: 98;
+  padding: 1.6rem;
+  border-top-right-radius: 3.2rem;
+  box-shadow: inset -0.4rem 0.4rem 0.4rem #969696; }
+
+#backdrop {
+  display: none;
+  z-index: 97;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right bottom, rgba(205, 238, 191, 0.7), rgba(170, 218, 255, 0.7));
+  cursor: pointer; }
+
+#beta {
+  color: #969696;
+  font-size: 1.6rem; }
+
+#chat-room {
+  display: none;
+  z-index: 98;
+  position: absolute;
+  max-width: 76.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  background: #f5f5f5;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  box-shadow: 0 0 20px #969696; }
+  #chat-room header {
+    position: fixed;
+    z-index: 99;
+    max-width: 76.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff; }
+  #chat-room input, #chat-room button {
+    border-radius: 1.6rem;
+    padding: .8rem 1.6rem;
+    font-size: 1.6rem;
+    margin: .2rem 0; }
+  #chat-room input {
+    flex-grow: 1;
+    border: solid #969696 0.1rem; }
+  #chat-room button {
+    background: linear-gradient(to right bottom, #cdeebf, #aadaff);
+    border: none; }
+    #chat-room button:hover {
+      background: linear-gradient(to right bottom, #ddf3d3, #c4e5ff);
+      cursor: pointer;
+      box-shadow: 0 0.5rem 0.5rem #969696;
+      transform: translateY(-0.2rem); }
+    #chat-room button:active {
+      box-shadow: 0 0.2rem 0.2rem #969696;
+      transform: translateY(0); }
+
+#chat {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+#chat-room h1 {
+  text-align: center; }
+
+#chat-messages {
+  padding-bottom: 3.8rem; }
+
+.chat-message {
+  display: flex;
+  margin: 1.6rem auto; }
+
+.message-author {
+  width: 25%;
+  text-align: right;
+  padding-right: 3.2rem; }
+
+.message-text {
+  width: 75%; }
+
+#chat-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex; }
+
+#info {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  width: 70%;
+  left: 15%;
+  top: 15%;
+  background: #f5f5f5;
+  padding: 3.2rem;
+  border: solid #cdeebf 0.2rem;
+  border-radius: 3.2rem;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+  #info button {
+    border-radius: 1.6rem;
+    padding: .8rem 1.6rem;
+    font-size: 1.6rem;
+    margin: .2rem 0;
+    background: linear-gradient(to right bottom, #cdeebf, #aadaff);
+    border: none;
+    display: block; }
+    #info button:hover {
+      background: linear-gradient(to right bottom, #ddf3d3, #c4e5ff);
+      cursor: pointer;
+      box-shadow: 0 0.5rem 0.5rem #969696;
+      transform: translateY(-0.2rem); }
+    #info button:active {
+      box-shadow: 0 0.2rem 0.2rem #969696;
+      transform: translateY(0); }
+  #info input {
+    border-radius: 1.6rem;
+    padding: .8rem 1.6rem;
+    font-size: 1.6rem;
+    margin: .2rem 0;
+    display: block;
+    border: solid #969696 0.1rem; }
+  #info p {
+    margin: 1.6rem auto; }
+
+@media (max-width: 76.8rem) {
+  #info {
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    top: 0;
+    left: 0; } }
+
+#info h1 {
+  text-align: center; }
+
+#info h1 span {
+  font-size: 50%;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.form-box {
+  width: 50%;
+  float: left; }
+
+@media (max-width: 76.8rem) {
+  .form-box {
+    width: 100%; } }
+
+#info-exit {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  cursor: pointer; }
+
+#info-button {
+  position: fixed;
+  z-index: 98;
+  top: 1.6rem;
+  left: 1.6rem;
+  cursor: pointer; }
+
+/* Always set the map height explicitly to define the size of the div
+  * element that contains the map. */
+#map {
+  height: 100%; }
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
